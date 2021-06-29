@@ -1,4 +1,37 @@
-<div class="row" *ngIf="!active">
-  <p>welcome{{name}}</p>
+<div class="row">
+<div class="table">
+  <table>
+    <tr>
+      <th>Code</th>
+      <th><i class="fas fa-user"></i>Name</th>
+      <th>Adresse</th>
+      <th>Items</th>
+    </tr>
 
+    <tr *ngFor="let item of dataList">
+      <td>{{item.code}}</td>
+      <td>{{ item.name }}</td>
+      <td>{{item.adresse}}</td>
+      <td></td>
+    </tr>
+  </table>
 </div>
+</div>
+<br>
+<select >
+  <option *ngFor="let item of dataList">
+    {{item.name}}
+  </option>
+</select>
+<br>
+<div class="row">
+  <div  [ngSwitch]="name">
+    <div *ngSwitchCase="'makni'">welcome makni</div>
+    <div *ngSwitchCase="'bechir'">welcome bechir</div>
+
+  </div>
+</div>
+<p><i class="fa fa-user" ></i>bechir</p>
+
+<i class="fa fa-users"></i>
+<i class="fas fa-bell"></i>

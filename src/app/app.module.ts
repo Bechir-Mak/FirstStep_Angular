@@ -7,6 +7,8 @@ import { UserComponent } from './components/user/user.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './components/register/register.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { RegisterComponent } from './components/register/register.component';
     AppComponent,
     UserComponent,
     HeaderComponent,
-    RegisterComponent
+    RegisterComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

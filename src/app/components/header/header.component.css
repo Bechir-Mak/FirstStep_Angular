@@ -1,0 +1,9 @@
+.header{
+  color: beige;
+  background-color: black;
+  text-align: center;
+  position: initial;
+  border-color: turquoise;
+  display: -ms-grid;
+  backface-visibility: hidden;
+}

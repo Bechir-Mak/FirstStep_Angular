@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
+import { Personne } from './classes/personne';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
-  title = 'ngTest';
+  title = 'Bechir';
+  personne:Personne = new Personne(1,"bechir","makni");
+  
 }
